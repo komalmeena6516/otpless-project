@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+</head>
+<body>
+<div id="data">
+<h1>OPTless Login</h1>
+
+</div>
+
+
+<script type="text/javascript" src="https://otpless.com/auth.js" cid="TYF874L62TUSGC7LZZ9EPIDRIGGKDMYK">
+
+const data = Document.getElementById("data");
+ // Handle OTPless initialization
+    
+function otpless(otplessUser) {
+  console.log(JSON.stringify(otplessUser));
+  console.log(otplessUser);
+  console.log("hello ....");
+  const UserData = JSON.parse(otplessUser);
+  console.log(UserData)
+const para = document.createElement("h2");
+const node = document.createTextNode(`Name : ${UserData.email.name} Email: ${UserData.email.email}`);
+para.appendChild(node);
+data.appendChild(para);
+ }
+
+</script>
+</body>
+</html>
+
+
+  
+
+
